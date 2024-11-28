@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <style>
-    /* Custom Image Styling */
-    .section-image img {
+    /* Static Image Section Styling */
+    .hero-image {
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .hero-image img {
       display: block;
-      margin: 2rem auto;
+      margin: 0 auto;
       max-width: 300px; /* Adjust image size */
       height: auto; /* Maintain aspect ratio */
       border-radius: 80%; /* Make the image circular */
@@ -32,35 +37,22 @@
     </div>
   </header>
 
+  <!-- Static Image Section -->
+  <section class="hero-image">
+    <img src="/assets/images/profile.jpeg" alt="Hyunwoo (Brian) Kim">
+    <h1>Hyunwoo (Brian) Kim</h1>
+    <p>I am a fourth-year undergraduate student at the University of Chicago studying Statistics and Computer Science. My research interests lie in the intersection of graphics, 3D computer vision, and deep learning.</p>
+  </section>
+
   <!-- Main Content -->
   <main class="home">
     <!-- Render Dynamic Sections -->
     {%- for section in site.sections -%}
     <div id="{{ section.id }}" class="section">
       <h1>{{ section.title }}</h1>
-      {% if section.image %}
-        <div class="section-image">
-          <img src="{{ section.image | relative_url }}" alt="{{ section.title }}">
-        </div>
-      {% endif %}
       <div>{{ section.content | markdownify }}</div>
     </div>
     {%- endfor -%}
-
-    <!-- Default Jekyll Posts List -->
-    {%- if site.posts.size > 0 -%}
-    <div class="post-list">
-      <h2>Recent Posts</h2>
-      <ul>
-        {%- for post in site.posts -%}
-        <li>
-          <span>{{ post.date | date: "%b %d, %Y" }}</span>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {%- endfor -%}
-      </ul>
-    </div>
-    {%- endif -%}
   </main>
 </body>
 </html>
