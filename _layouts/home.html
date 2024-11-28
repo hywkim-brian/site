@@ -11,9 +11,11 @@ title: Home
   <!-- Navigation -->
   
 
-  <!-- Sections -->
-  <div class="profile-section">
-    <!-- Section Content -->
+ <!-- Profile Section -->
+<div class="profile-section">
+  <!-- Bio and Sections Content -->
+  <div class="content">
+    <!-- Bio -->
     <div id="bio">
       {%- for bio in site.bio -%}
       <div id="{{ bio.id }}" class="bio">
@@ -23,20 +25,21 @@ title: Home
       {%- endfor -%}
     </div>
 
-    <!-- Profile Picture -->
-    <a href="{{ "/" | relative_url }}" class="profile-picture">
-      <img src="{{ "/assets/images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
-    </a>
+    <!-- Sections -->
+    <div id="sections">
+      {%- for section in site.sections -%}
+      <div id="{{ section.id }}" class="section">
+        <h2>{{ section.title }}</h2>
+        <p>{{ section.content }}</p>
+      </div>
+      {%- endfor -%}
+    </div>
   </div>
 
-  <!-- Section Content -->
-  <div id="sections">
-    {%- for section in site.sections -%}
-    <div id="{{ section.id }}" class="section">
-      <h2>{{ section.title }}</h2>
-      <p>{{ section.content }}</p>
-    </div>
-    {%- endfor -%}
-  </div>
+  <!-- Profile Picture -->
+  <a href="{{ "/" | relative_url }}" class="profile-picture">
+    <img src="{{ "/assets/images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
+  </a>
+</div> 
 
 </div>
