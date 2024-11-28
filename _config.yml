@@ -17,11 +17,7 @@ section:
 
   - id: services
     title: "Services"
-    content: "We offer web development, design, and consultation services."
-
-  - id: section4
-    title: "Contact Us"
-    content: "Reach us at contact@example.com or via our social media platforms."
+    
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
