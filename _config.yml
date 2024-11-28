@@ -6,7 +6,6 @@ author:
 sections:
   - id: section1
     title: "Hyunwoo (Brian) Kim"
-    image: "/assets/images/profile.jpeg"
     content: |
       <p>I am a fourth-year undergraduate student at the University of Chicago studying Statistics and Computer Science. My research interests lie in the intersection of graphics, 3D computer vision, and deep learning. I am a research assistant at UChicago's 3DL, advised by Prof. Rana Hanocka.</p>
 
