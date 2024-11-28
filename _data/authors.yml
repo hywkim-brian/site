@@ -1,0 +1,29 @@
+dale:
+  first_name: Dale
+  last_name: Decatur
+  website: https://ddecatur.github.io/
+  is_me: true
+rana:
+  first_name: Rana
+  last_name: Hanocka
+  website: https://people.cs.uchicago.edu/~ranahanocka/
+itai:
+  first_name: Itai 
+  last_name: Lang
+  website: https://itailang.github.io/
+kfir:
+  first_name: Kfir
+  last_name: Aberman
+  website: https://kfiraberman.github.io/
+skr:
+  first_name: Sanjay
+  last_name: Krishnan
+  website: https://people.cs.uchicago.edu/~skr
+sudarshan:
+  first_name: Sudarshan
+  last_name: Babu
+  website: https://people.cs.uchicago.edu/~sudarshan/
+fei:
+  first_name: Fei
+  last_name: Xu
+  website:
