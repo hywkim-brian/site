@@ -1,11 +1,11 @@
 title: Hyunwoo (Brian) Kim
 author:
-  name: About me
+  name: Hyunwoo (Brian) Kim
   email: hywkim@uchicago.edu
 
 bio:
   - id: bio 
-    title: "Hyunwoo (Brian) Kim"
+    title: "About me"
     content: |
       <p>I am a fourth-year undergraduate student at the University of Chicago studying Statistics and Computer Science. My research interests lie in the intersection of graphics, 3D computer vision, and deep learning. I am a research assistant at UChicago's 3DL, advised by Prof. Rana Hanocka.</p>
 
