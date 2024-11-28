@@ -79,7 +79,9 @@
   .publication-image {
       //border-radius: 2%;
       align-items: center;
-      width: 100%;
+      width: 150px !important;
+      height: 150px !important;
+      object-fit: cover !important;
       height: auto;
       overflow: hidden;
       object-fit: cover; /* Crop the image to fit the container */
