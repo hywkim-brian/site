@@ -12,16 +12,21 @@ title: Home
   
 
   <!-- Sections -->
-  <a href="{{ "/" | relative_url }}" class="profile-picture">
-    <img src="{{ "/assets/images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
-  </a>
-  <div id="sections">
-    {%- for section in site.sections -%}
-    <div id="{{ section.id }}" class="section">
-      <h2>{{ section.title }}</h2>
-      <p>{{ section.content }}</p>
+  <div class="profile-section">
+    <!-- Profile Picture -->
+    <a href="{{ "/" | relative_url }}" class="profile-picture">
+      <img src="{{ "/assets/images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
+    </a>
+  
+    <!-- Section Content -->
+    <div id="sections">
+      {%- for section in site.sections -%}
+      <div id="{{ section.id }}" class="section">
+        <h2>{{ section.title }}</h2>
+        <p>{{ section.content }}</p>
+      </div>
+      {%- endfor -%}
     </div>
-    {%- endfor -%}
   </div>
 
   <!-- Optional: Blog Posts Section -->
