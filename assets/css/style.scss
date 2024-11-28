@@ -8,7 +8,7 @@
 
   .profile-picture img {
     width: 200px; // Adjust size
-    object-fit: cover; // Ensures it looks good when cropped
+    //object-fit: cover; // Ensures it looks good when cropped
     margin-right: 10px; // Spacing between the image and text
     vertical-align: middle; // Aligns with the site title
   }
@@ -20,7 +20,7 @@
 
   .profile-section {
     display: flex; /* Align items horizontally */
-    align-items: center; /* Vertically align the items */
+    //align-items: center; /* Vertically align the items */
     gap: 20px; /* Add spacing between image and text */
     padding: 20px; /* Optional: Add padding */
   }
