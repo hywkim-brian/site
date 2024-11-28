@@ -3,6 +3,22 @@ author:
   name: Brian (Hyunwoo) Kim
   email: hywkim@uchicago.edu
 
+sections:
+  - id: section1
+    title: "Welcome"
+    content: "Welcome to our single-page site! Navigate below to learn more."
+
+  - id: section2
+    title: "About Us"
+    content: "We are a company that simplifies web layouts and designs."
+
+  - id: section3
+    title: "Our Services"
+    content: "We offer web development, design, and consultation services."
+
+  - id: section4
+    title: "Contact Us"
+    content: "Reach us at contact@example.com or via our social media platforms."
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
