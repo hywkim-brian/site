@@ -6,8 +6,8 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 .profile-picture img {
-  width: 50px; /* Set the desired size */
-  height: 50px;
+  width: 10px; /* Set the desired size */
+  height: 10px;
   border-radius: 50%; /* Makes it circular */
   object-fit: cover; /* Ensures proper cropping */
   margin-right: 10px; /* Adds spacing next to it */
