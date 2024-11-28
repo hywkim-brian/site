@@ -7,9 +7,7 @@
   "minima/initialize";
 
   .profile-picture img {
-    width: 300px; // Adjust size
-    height: 300px;
-    border-radius: 50%; // Makes it circular
+    width: 250px; // Adjust size
     object-fit: cover; // Ensures it looks good when cropped
     margin-right: 10px; // Spacing between the image and text
     vertical-align: middle; // Aligns with the site title
