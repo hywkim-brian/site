@@ -5,23 +5,19 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
-.profile-picture img {
-  width: 10px; /* Set the desired size */
-  height: 10px;
-  border-radius: 50%; /* Makes it circular */
-  object-fit: cover; /* Ensures proper cropping */
-  margin-right: 10px; /* Adds spacing next to it */
-  vertical-align: middle; /* Aligns with text */
-}
 
-.site-header .wrapper {
-  display: flex;
-  align-items: center; /* Aligns items vertically */
-}
+  .profile-picture img {
+    width: 50px; // Adjust size
+    height: 50px;
+    border-radius: 50%; // Makes it circular
+    object-fit: cover; // Ensures it looks good when cropped
+    margin-right: 10px; // Spacing between the image and text
+    vertical-align: middle; // Aligns with the site title
+  }
+  
+  // Align items in the header
+  .site-header .wrapper {
+    display: flex;
+    align-items: center; // Vertically align items
+  }
 
-.site-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  text-decoration: none;
-}
