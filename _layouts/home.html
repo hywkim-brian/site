@@ -19,14 +19,24 @@ title: Home
     </a>
   
     <!-- Section Content -->
-    <div id="sections">
-      {%- for section in site.sections -%}
-      <div id="{{ section.id }}" class="section">
-        <h2>{{ section.title }}</h2>
-        <p>{{ section.content }}</p>
+    <div id="bio">
+      {%- for bio in site.bio -%}
+      <div id="{{ bio.id }}" class="bio">
+        <h2>{{ bio.title }}</h2>
+        <p>{{ bio.content }}</p>
       </div>
       {%- endfor -%}
     </div>
+  </div>
+
+  <!-- Section Content -->
+  <div id="sections">
+    {%- for section in site.sections -%}
+    <div id="{{ section.id }}" class="section">
+      <h2>{{ section.title }}</h2>
+      <p>{{ section.content }}</p>
+    </div>
+    {%- endfor -%}
   </div>
 
   <!-- Optional: Blog Posts Section -->

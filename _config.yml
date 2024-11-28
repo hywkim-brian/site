@@ -1,16 +1,17 @@
-title: Brian (Hyunwoo) Kim
+title: Hyunwoo (Brian) Kim
 author:
-  name: Brian (Hyunwoo) Kim
+  name: Hyunwoo (Brian) Kim
   email: hywkim@uchicago.edu
 
-sections:
-  - id: section1
+bio:
+  - id: bio 
     title: "Hyunwoo (Brian) Kim"
     content: |
       <p>I am a fourth-year undergraduate student at the University of Chicago studying Statistics and Computer Science. My research interests lie in the intersection of graphics, 3D computer vision, and deep learning. I am a research assistant at UChicago's 3DL, advised by Prof. Rana Hanocka.</p>
 
       <p>I love singing and going to musical theatres. I can sing in three different voices: classic bari-tenor, musical, and pop (somewhat).</p>
 
+section:
   - id: section2
     title: "About Us"
     content: "We are a company that simplifies web layouts and designs."
