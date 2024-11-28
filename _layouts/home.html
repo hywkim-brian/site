@@ -12,6 +12,9 @@ title: Home
   
 
   <!-- Sections -->
+  <a href="{{ "/" | relative_url }}" class="profile-picture">
+    <img src="{{ "/assets/images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
+  </a>
   <div id="sections">
     {%- for section in site.sections -%}
     <div id="{{ section.id }}" class="section">
