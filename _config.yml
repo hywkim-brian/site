@@ -5,8 +5,11 @@ author:
 
 sections:
   - id: section1
-    title: "Welcome"
-    content: "Welcome to our single-page site! Navigate below to learn more."
+    title: "Hyunwoo (Brian) Kim"
+    content: "I am a fourth year undergraduate student at the University of Chicago studying Statistics and Computer Science. My research interests lie in the intersection of graphics, 3D computer vision, and deep learning. 
+    I am a research assistant at UChicago's 3DL, advised by Prof. Rana Hanocka.
+    
+    I love singing, and going to muscial theatres. I can sing in three different voices: classic bari-tenor, musical style, and pop (somewhat)."
 
   - id: section2
     title: "About Us"
