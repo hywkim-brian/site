@@ -12,12 +12,11 @@ bio:
       <p>I love singing and going to musical theatres. I can sing in three different voices: classic bari-tenor, musical, and pop (somewhat).</p>
 
 section:
-  - id: section2
-    title: "About Us"
-    content: "We are a company that simplifies web layouts and designs."
+  - id: publications
+    title: "Publications"
 
-  - id: section3
-    title: "Our Services"
+  - id: services
+    title: "Services"
     content: "We offer web development, design, and consultation services."
 
   - id: section4
