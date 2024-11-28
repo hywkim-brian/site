@@ -13,11 +13,6 @@ title: Home
 
   <!-- Sections -->
   <div class="profile-section">
-    <!-- Profile Picture -->
-    <a href="{{ "/" | relative_url }}" class="profile-picture">
-      <img src="{{ "/assets/images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
-    </a>
-  
     <!-- Section Content -->
     <div id="bio">
       {%- for bio in site.bio -%}
@@ -27,6 +22,10 @@ title: Home
       </div>
       {%- endfor -%}
     </div>
+    <!-- Profile Picture -->
+    <a href="{{ "/" | relative_url }}" class="profile-picture">
+      <img src="{{ "/assets/images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
+    </a>
   </div>
 
   <!-- Section Content -->
