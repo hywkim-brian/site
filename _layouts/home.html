@@ -10,24 +10,28 @@ title: Home
   <!-- Navigation -->
 
  <!-- Profile Section -->
-<div class="profile-block columns">
-  <!-- Profile Picture -->
-  <div class="profile-picture">
-    <img src="{{ "./images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
-  </div>
-  <!-- Bio and Sections Content -->
-  <div class="column">
-    <div class="content">
-      <!-- Bio -->
-      <div id="bio">
-        <div id="{{ bio.id }}" class="bio">
-          <h2>{{ site.bio.title }}</h2>
-          <p>{{ site.bio.content }}</p>
+<section class="section" id="profile">
+  <div class="container is-max-desktop">
+    <h2>{{ site.bio.title }}</h2>
+    <div class="profile-block columns">
+      <!-- Profile Picture -->
+      <div class="profile-picture">
+        <img src="{{ "./images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
+      </div>
+      <!-- Bio and Sections Content -->
+      <div class="column">
+        <div class="content">
+          <!-- Bio -->
+          <div id="bio">
+            <div id="{{ bio.id }}" class="bio">
+              <p>{{ site.bio.content }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div> 
+  </div> 
+</section>
 
 <!-- Research. -->
 <section class="section" id="research">
