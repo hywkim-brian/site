@@ -10,21 +10,24 @@ title: Home
 
   <!-- Navigation -->
  <!-- Profile Section -->
-<div class="profile-section">
+<div class="profile-block columns">
   <!-- Profile Picture -->
-  <a href="{{ "/" | relative_url }}" class="profile-picture">
+  <div class="profile-picture">
     <img src="{{ "./images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
-  </a>
+  </div>
+  
   <!-- Bio and Sections Content -->
-  <div class="content">
-    <!-- Bio -->
-    <div id="bio">
-      {%- for bio in site.bio -%}
-      <div id="{{ bio.id }}" class="bio">
-        <h2>{{ bio.title }}</h2>
-        <p>{{ bio.content }}</p>
+  <div class="column">
+    <div class="content">
+      <!-- Bio -->
+      <div id="bio">
+        {%- for bio in site.bio -%}
+        <div id="{{ bio.id }}" class="bio">
+          <h2>{{ bio.title }}</h2>
+          <p>{{ bio.content }}</p>
+        </div>
+        {%- endfor -%}
       </div>
-      {%- endfor -%}
     </div>
   </div>
 
