@@ -119,13 +119,13 @@
   
   /* Video Container Styles (if applicable) */
 
-.publication-mousecell {
+  .publication-mousecell {
     position: relative;
     width: 200px;
     height: 200px;
     overflow: hidden;
-
-    video {
-        display: none;
-    }
-}
+  }
+  
+  .publication-mousecell video {
+    display: none;
+  }
