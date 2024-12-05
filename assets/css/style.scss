@@ -6,18 +6,20 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 .profile-block {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  .profile-picture img {
-    width: 120% !important; // Adjust size
-    margin-right: 10px; // Spacing between the image and text
-  }
-  .profile-description {
-    color: #333; // Text color
-    margin: 0; // Remove default margin
-  }
+    display: flex !important;
+    align-items: center;
+    .publication-image {
+        width: 120% !important; /* Match the profile picture width */
+        height: 120%; /* Ensure proportional scaling */
+        overflow: hidden; /* Crop overflow */
+        font-size: 0;
+        box-shadow: 0px 0px 15px #b4b4b4; /* Optional: Keep shadow styling */
+      }
+    .publication-image img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Maintain aspect ratio */
+    } 
+    
 }
 
 
