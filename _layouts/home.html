@@ -24,16 +24,6 @@ title: Home
       </div>
       {%- endfor -%}
     </div>
-
-    <!-- Sections -->
-    <div id="sections">
-      {%- for section in site.sections -%}
-      <div id="{{ section.id }}" class="section">
-        <h2>{{ section.title }}</h2>
-        <p>{{ section.content }}</p>
-      </div>
-      {%- endfor -%}
-    </div>
   </div>
 
   <!-- Profile Picture -->
@@ -49,8 +39,6 @@ title: Home
     <!-- <hr style="border: 1px solid #000"> -->
     {% for publication in site.data.publications %}
     <div class="publication-block columns">
-
-        
 
       <div class="column">
         <div class="content">

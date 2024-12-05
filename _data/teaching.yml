@@ -3,12 +3,6 @@
   title: Research Supervisor and Mentor
   venue: University of Chicago
   items:
-    - name: Graduate Students
-      bullets:
-        - subject: Fei Xu, 2023
-          text: Mesh Segmentation
-          # dates: Summer 2023 - Present
-    - name: Undergraduate Students
       bullets:
         - subject: Douglas Williams, 2023
           text: Adaptive Mesh Stylization
