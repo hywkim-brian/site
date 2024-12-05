@@ -86,18 +86,23 @@
   }
 
   .publication-image {
-    width: 120px !important; /* Explicit square width */
-    height: 120px !important; /* Match height to width */
-    overflow: hidden; /* Crop overflow for square shape */
+    width: 120px !important; /* Fixed square width */
+    height: 120px !important; /* Fixed square height */
+    overflow: hidden; /* Crop overflow */
     font-size: 0;
-    box-shadow: 0px 0px 15px #b4b4b4; /* Optional: Shadow for styling */
-    border-radius: 2%; /* Optional: Slight rounding for smooth edges */
+    position: relative; /* Ensure child positioning works correctly */
+    box-shadow: 0px 0px 15px #b4b4b4; /* Optional: Shadow styling */
+    border-radius: 2%; /* Optional: Rounding for smooth edges */
   }
   
   .publication-image img {
-    width: 100%; /* Ensure image fills the square */
-    height: 100%; /* Stretch image to fill the square */
-    object-fit: cover !important; /* Maintain aspect ratio while filling container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto; /* Maintain original aspect ratio */
+    height: 100%; /* Fill the height of the square */
+    transform: translate(-50%, -50%); /* Center the image in the square */
+    object-fit: cover; /* Crop to fit the square */
   }
 
   .publication-mousecell {
