@@ -12,16 +12,13 @@
   padding: 20px;
   .profile-picture img {
     width: 120% !important; // Adjust size
-    //object-fit: cover; // Ensures it looks good when cropped
     margin-right: 10px; // Spacing between the image and text
-    //vertical-align: middle; // Aligns with the site title
   }
   .profile-description {
     color: #333; // Text color
     margin: 0; // Remove default margin
   }
 }
-
 
 
 .site-header .wrapper {
@@ -43,6 +40,7 @@
 
 .publication-block {
   display: flex !important;
+  align-items: center;
   .publication-title {
       width: fit-content;
       margin: 0 !important;
