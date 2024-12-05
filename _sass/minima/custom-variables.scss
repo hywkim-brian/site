@@ -2,16 +2,18 @@
 .profile-block {
     display: flex !important;
     .profile-picture {
-        width: 120% !important; /* Match the profile picture width */
-        height: 120%; /* Ensure proportional scaling */
-        overflow: hidden; /* Crop overflow */
-        font-size: 0;
-        box-shadow: 0px 0px 15px #b4b4b4; /* Optional: Keep shadow styling */
-      }
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        box-shadow: 0px 0px 15px #b4b4b4;
+    }
+    
     .profile-picture img {
-    width: 100%; /* Ensure the image fills the container */
-    height: 100%; /* Maintain aspect ratio */
-    } 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
     .bio {
         width: fit-content;
         margin: 0 !important;
@@ -63,7 +65,7 @@
       font-weight: bolder;
   }
 
-  .publication-authors {
+    .publication-authors {
       .author-me {
           color: #000;
           font-weight: 600;
@@ -78,17 +80,19 @@
       }
   }
 
-  .publication-image {
-    width: 120% !important; /* Match the profile picture width */
-    height: 120%; /* Ensure proportional scaling */
-    overflow: hidden; /* Crop overflow */
-    font-size: 0;
-    box-shadow: 0px 0px 15px #b4b4b4; /* Optional: Keep shadow styling */
-  }
-  .publication-image img {
-    width: 100%; /* Ensure the image fills the container */
-    height: 100%; /* Maintain aspect ratio */
-  }
+    .publication-image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px #b4b4b4;
+    }
+
+    .publication-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    }
 
   .publication-mousecell {
       align-items: center;
