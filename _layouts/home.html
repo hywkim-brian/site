@@ -7,31 +7,26 @@ title: Home
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
-
   <!-- Navigation -->
+
  <!-- Profile Section -->
 <div class="profile-block columns">
   <!-- Profile Picture -->
   <div class="profile-picture">
     <img src="{{ "./images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
   </div>
-  
   <!-- Bio and Sections Content -->
   <div class="column">
     <div class="content">
       <!-- Bio -->
       <div id="bio">
-        {%- for bio in site.bio -%}
         <div id="{{ bio.id }}" class="bio">
-          <h2>{{ bio.title }}</h2>
-          <p>{{ bio.content }}</p>
+          <h2>{{ site.bio.title }}</h2>
+          <p>{{ site.bio.content }}</p>
         </div>
-        {%- endfor -%}
       </div>
     </div>
   </div>
-
-  
 </div> 
 
 <!-- Research. -->
@@ -75,7 +70,6 @@ title: Home
           </div>
           <p class="publication-description">{{ publication.description }}</p>
 
-
           <!-- Publication Links. -->
           <div class="publication-links buttons field">
             <a class="external-link button is-small is-light is-link is-rounded"
@@ -104,7 +98,6 @@ title: Home
           <!--/ Publication Links. -->
         </div>
       </div>
-      
     </div>
     {% endfor %}
     <br />
