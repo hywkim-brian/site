@@ -13,6 +13,10 @@ title: Home
 
  <!-- Profile Section -->
 <div class="profile-section">
+  <!-- Profile Picture -->
+  <a href="{{ "/" | relative_url }}" class="profile-picture">
+    <img src="{{ "./images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
+  </a>
   <!-- Bio and Sections Content -->
   <div class="content">
     <!-- Bio -->
@@ -26,10 +30,7 @@ title: Home
     </div>
   </div>
 
-  <!-- Profile Picture -->
-  <a href="{{ "/" | relative_url }}" class="profile-picture">
-    <img src="{{ "./images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
-  </a>
+  
 </div> 
 
 <!-- Research. -->
@@ -39,7 +40,15 @@ title: Home
     <!-- <hr style="border: 1px solid #000"> -->
     {% for publication in site.data.publications %}
     <div class="publication-block columns">
-
+      <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
+        {% if publication.image_mouseover contains "mp4" %}
+        <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
+          <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        {% endif %}
+        <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
+      </div>
       <div class="column">
         <div class="content">
           <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
@@ -94,15 +103,7 @@ title: Home
           <!--/ Publication Links. -->
         </div>
       </div>
-      <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
-        {% if publication.image_mouseover contains "mp4" %}
-        <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
-          <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        {% endif %}
-        <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
-      </div>
+      
     </div>
     {% endfor %}
     <br />
