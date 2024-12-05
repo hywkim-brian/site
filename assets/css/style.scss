@@ -97,7 +97,7 @@
   .publication-image img {
     width: 100%; /* Ensure image fills the square */
     height: 100%; /* Stretch image to fill the square */
-    object-fit: cover; /* Maintain aspect ratio while filling container */
+    object-fit: cover !important; /* Maintain aspect ratio while filling container */
   }
 
   .publication-mousecell {
