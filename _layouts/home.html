@@ -17,13 +17,10 @@ title: Home
         <img src="{{ './images/profile.jpeg' | relative_url }}" alt="Profile Picture" />
       </div>
       <!-- Bio Content -->
-      <div class="content">
-        <p>I am a fourth-year undergraduate student at the University of Chicago studying Statistics and Computer Science. My research interests lie in the intersection of graphics, 3D computer vision, and deep learning. I am a research assistant at UChicago's 3DL, advised by Prof. Rana Hanocka.</p>
-
-        <p>I love singing and going to musical theatres in my free time.</p>
-
-
-        <p class="publication-description">{{ site.bio.content }}</p>
+      <div class="column">
+        <div class="content">
+          <p class="publication-description">{{ site.bio.content }}</p>
+        </div>
       </div>
     </div>
   </div>
