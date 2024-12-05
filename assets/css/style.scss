@@ -19,7 +19,14 @@
     width: 100%; /* Ensure the image fills the container */
     height: 100%; /* Maintain aspect ratio */
     } 
-    
+    .bio {
+        width: fit-content;
+        margin: 0 !important;
+        font-weight: 600;
+        font-size: 110% !important;
+  
+        a { color: #000 }
+    } 
 }
 
 
@@ -27,12 +34,6 @@
   display: flex;
 }
 
-.profile-section {
-  display: flex; /* Align items horizontally */
-  //align-items: center; /* Vertically align the items */
-  gap: 20px; /* Add spacing between image and text */
-  padding: 20px; /* Optional: Add padding */
-}
 
 
 .footer .footer-links a {
