@@ -86,21 +86,17 @@
   }
 
   .publication-image {
-    width: 120px !important; /* Fixed square width */
-    height: 120px !important; /* Fixed square height */
+    width: 120% !important; /* Match the profile picture width */
+    height: 120%; /* Ensure proportional scaling */
     overflow: hidden; /* Crop overflow */
     font-size: 0;
-    position: relative; /* Ensure child positioning works correctly */
-    box-shadow: 0px 0px 15px #b4b4b4; /* Optional: Shadow styling */
-    border-radius: 2%; /* Optional: Rounding for smooth edges */
+    box-shadow: 0px 0px 15px #b4b4b4; /* Optional: Keep shadow styling */
+    object-fit: cover !important;
   }
-  
   .publication-image img {
-    position: absolute;
-    width: auto; /* Maintain original aspect ratio */
-    height: 100%; /* Fill the height of the square */
-    transform: translate(-50%, -50%); /* Center the image in the square */
-    object-fit: cover; /* Crop to fit the square */
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover;
   }
 
   .publication-mousecell {
