@@ -128,3 +128,13 @@
   .publication-mousecell video {
     display: none;
   }
+
+  .column.has-text-right a i {
+    font-size: 24px; /* Adjust the size as needed */
+    margin: 0 10px;  /* Adjust spacing between icons */
+    color: #333;     /* Adjust icon color */
+  }
+  
+  .column.has-text-right a i:hover {
+    color: #000;     /* Change color on hover if desired */
+  }
