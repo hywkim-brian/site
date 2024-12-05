@@ -97,8 +97,6 @@
   
   .publication-image img {
     position: absolute;
-    top: 50%;
-    left: 50%;
     width: auto; /* Maintain original aspect ratio */
     height: 100%; /* Fill the height of the square */
     transform: translate(-50%, -50%); /* Center the image in the square */
