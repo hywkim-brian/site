@@ -16,9 +16,7 @@
 
       <div class="trigger" style="display: flex; gap: 15px;">
         <!-- Dynamic Section Links -->
-        {%- for section in site.bio-%}
-          <a class="page-link" href="#{{ section.id }}">{{ section.title }}</a>
-        {%- endfor -%}
+        <a class="page-link" href="#{{ site.bio.id }}">{{ section.title }}</a>
         <a class="page-link" href="#research">Research</a>
       </div>
     </nav>
