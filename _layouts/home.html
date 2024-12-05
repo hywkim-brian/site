@@ -2,7 +2,7 @@
 layout: base
 title: Home
 ---
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <div class="home">
   {% if page.title %}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -23,6 +23,23 @@ title: Home
         <div class="column">
           <div class="content">
             <p class="profile-description">{{ site.bio.content }}</p>
+            <div class="column has-text-right">
+              <p>
+                <a href="{{ site.url }}" aria-label="Home">
+                  <i class="fas fa-home"></i>
+                </a>
+              </p>
+              <p>
+                <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub Profile">
+                  <i class="fab fa-github"></i>
+                </a>
+              </p>
+              <p>
+                <a href="mailto:{{ site.email }}" aria-label="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
