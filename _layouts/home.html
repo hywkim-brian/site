@@ -9,14 +9,10 @@ title: Home
   {%- endif -%}
 
   <!-- Navigation -->
-  
-
  <!-- Profile Section -->
 <div class="profile-section">
   <!-- Profile Picture -->
-  <a href="{{ "/" | relative_url }}" class="profile-picture">
-    <img src="{{ "./images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
-  </a>
+  
   <!-- Bio and Sections Content -->
   <div class="content">
     <!-- Bio -->
@@ -24,6 +20,11 @@ title: Home
       {%- for bio in site.bio -%}
       <div id="{{ bio.id }}" class="bio">
         <h2>{{ bio.title }}</h2>
+      </div>
+      <a href="{{ "/" | relative_url }}" class="profile-picture">
+        <img src="{{ "./images/profile.jpeg" | relative_url }}" alt="Profile Picture" />
+      </a>
+      <div id="{{ bio.id }}" class="bio">
         <p>{{ bio.content }}</p>
       </div>
       {%- endfor -%}
