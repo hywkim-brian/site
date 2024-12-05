@@ -17,7 +17,11 @@ title: Home
         <img src="{{ './images/profile.jpeg' | relative_url }}" alt="Profile Picture" />
       </div>
       <!-- Bio Content -->
-      <p class="profile-description">{{ site.bio.content }}</p>
+      <div class="column">
+        <div class="content">
+          <p class="profile-description">{{ site.bio.content }}</p>
+        </div>
+      </div>
     </div>
   </div>
 
