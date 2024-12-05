@@ -77,19 +77,15 @@
   }
 
   .publication-image {
-      //border-radius: 2%;
-      align-items: center;
-      width: 100px !important;
-      height: 100px !important;
-      overflow: hidden;
-      font-size: 0;
-      box-shadow: 0px 0px 15px #b4b4b4;
-      -moz-box-shadow: 0px 0px 15px #b4b4b4;
-      -webkit-box-shadow: 0px 0px 15px #b4b4b4;
-      -khtml-box-shadow: 0px 0px 15px #b4b4b4;
-      img {
-          width: 100%;
-      }
+    width: 120% !important; /* Match the profile picture width */
+    height: auto; /* Ensure proportional scaling */
+    overflow: hidden; /* Crop overflow */
+    font-size: 0;
+    box-shadow: 0px 0px 15px #b4b4b4; /* Optional: Keep shadow styling */
+  }
+  .publication-image img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .publication-mousecell {
