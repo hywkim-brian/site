@@ -9,14 +9,9 @@ bio:
     content: |
       <p>I am a fourth-year undergraduate student at the University of Chicago studying Statistics and Computer Science. My research interests lie in the intersection of graphics, 3D computer vision, and deep learning. I am a research assistant at UChicago's 3DL, advised by Prof. Rana Hanocka.</p>
 
-      <p>I love singing and going to musical theatres. I can sing in three different voices: classic bari-tenor, musical, and pop (somewhat).</p>
+      <p>I love singing and going to musical theatres in my free time.</p>
 
-sections:
-  - id: publications
-    title: "Publications"
 
-  - id: services
-    title: "Services"
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
