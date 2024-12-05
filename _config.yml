@@ -2,14 +2,19 @@ title: Hyunwoo (Brian) Kim
 author:
   name: Hyunwoo (Brian) Kim
   email: hywkim@uchicago.edu
+  baseurl: "" # the subpath of your site, e.g. /blog
+  url: "https://github.com/hywkim-brian" # the base hostnrame & protocol for your site, e.g. http://example.com
+  twitter_username: hywkim
+  github_username: hywkim-brian
+  linkedin_username: hyun-woo-brian-kim-02b7561a9
+
+
 
 bio:
   id: bio 
   title: "About me"
   content: |
     <p>I am a fourth-year undergraduate student at the University of Chicago studying Statistics and Computer Science. My research interests lie in the intersection of graphics, 3D computer vision, and deep learning. I am a research assistant at UChicago's 3DL, advised by Prof. Rana Hanocka.</p>
-
-
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
