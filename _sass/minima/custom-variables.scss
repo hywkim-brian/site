@@ -1,7 +1,6 @@
 // Placeholder to allow overriding predefined variables smoothly.
 .profile-block {
     display: flex;
-    align-items: center;
     .profile-picture {
         width: 200px;
         height: 200px;
@@ -22,6 +21,14 @@
         font-size: 110% !important;
         a { color: #000 }
     } 
+    .profile-description{
+        width: fit-content;
+        margin: 0 !important;
+        font-weight: 600;
+        font-size: 110% !important;
+  
+        a { color: #000 }
+    }
 }
 
 .site-header .wrapper {
