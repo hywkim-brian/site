@@ -140,20 +140,34 @@
   }
 
   .icon-links {
-    display: flex; /* Ensure icons are placed in a row */
-    justify-content: center; /* Center icons horizontally */
-    align-items: center; /* Align icons vertically */
-    margin-top: 20px; /* Add space above the icons */
-    gap: 20px; /* Add space between the icons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the two boxes */
+    margin-top: 20px;
   }
   
-  .icon-links a {
-    color: #333; /* Default icon color */
-    font-size: 24px; /* Icon size */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s ease;
+  .icon-link-box {
+    display: inline-flex;
+    align-items: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
   }
   
-  .icon-links a:hover {
-    color: #000; /* Change icon color on hover */
+  .icon-link-box:hover {
+    background-color: #ddd;
   }
+  
+  .icon-link-box i {
+    font-size: 20px;
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
+  .icon-link-box span {
+    font-size: 16px;
+  } 
