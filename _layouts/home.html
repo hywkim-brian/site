@@ -28,18 +28,17 @@ title: Home
         </div>
       </div>
     </div>
-    <div class="column has-text-right">
-      <p>
-        <a href="https://github.com/{{ site.author.github_username }}" aria-label="GitHub Profile">
-          <i class="fab fa-github"></i>
-        </a>
-      </p>
-      <p>
-        <a href="mailto:{{ site.author.email }}" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </p>
-    </div>
+    <div class="column has-text-right icon-links">
+      <a href="{{ site.url }}" aria-label="Home">
+        <i class="fas fa-home"></i>
+      </a>
+      <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub Profile">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:{{ site.email }}" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div> 
   </section>
 
   <!-- Research Section -->
