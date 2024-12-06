@@ -145,6 +145,7 @@
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+    text-align: left; /* Ensure left alignment */
   }
   
   .icon-link-box {
@@ -154,7 +155,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px 10px;
-    color: #000; /* Force black text and icon color */
+    color: #000 !important; /* Force black text and icon color */
     text-decoration: none;
     transition: background-color 0.3s ease;
   }
@@ -166,10 +167,17 @@
   .icon-link-box i {
     font-size: 20px;
     margin-right: 8px;
-    color: #000; /* Ensure icon is black */
+    color: #000 !important; /* Force black icon color */
   }
   
   .icon-link-box span {
     font-size: 16px;
-    color: #000; /* Ensure text is black */
+    color: #000 !important; /* Force black text color */
+  }
+  
+  .icon-link-box:visited,
+  .icon-link-box:active,
+  .icon-link-box:link,
+  .icon-link-box:hover {
+    color: #000 !important; /* Ensures links do not turn blue */
   }
