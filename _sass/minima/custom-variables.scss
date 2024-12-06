@@ -140,19 +140,19 @@
   }
 
   .icon-links {
-    /* Align icons to the right if needed, depends on your layout */
-    text-align: right; 
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center icons horizontally */
+    gap: 20px; /* Space between the icons */
+    margin-top: 10px; /* Add spacing above the icons */
   }
   
   .icon-links a {
-    display: inline-block; 
-    margin: 0 10px;      /* Add spacing between icons */
-    color: #333;         /* Set icon color */
-    text-decoration: none;
-    font-size: 24px;      /* Adjust icon size as desired */
-    transition: color 0.3s;
+    color: #333; /* Default color of icons */
+    font-size: 24px; /* Icon size */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease;
   }
   
   .icon-links a:hover {
-    color: #000;          /* Change color on hover */
+    color: #000; /* Change icon color on hover */
   }
