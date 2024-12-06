@@ -181,3 +181,24 @@
   .icon-link-box:hover {
     color: #000 !important; /* Ensures links do not turn blue */
   }
+
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  
+  hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin-bottom: 1em;
+  }
+  
+  .services-list {
+    margin-top: 1em;
+  }
+  
+  .service-item {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    color: #333;
+  }
