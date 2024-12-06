@@ -23,22 +23,21 @@ title: Home
         <div class="column">
           <div class="content">
             <p class="profile-description">{{ site.bio.content }}</p>
-
           </div>
         </div>
       </div>
+      <div class="icon-links">
+        <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub Profile" class="icon-link-box">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:{{ site.email }}" aria-label="Email" class="icon-link-box">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
     </div>
-    <div class="icon-links">
-      <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub Profile" class="icon-link-box">
-        <i class="fab fa-github"></i>
-        <span>GitHub</span>
-      </a>
-      <a href="mailto:{{ site.email }}" aria-label="Email" class="icon-link-box">
-        <i class="fas fa-envelope"></i>
-        <span>Email</span>
-      </a>
-    </div> 
-  </section>
+  </section> 
 
   <!-- Research Section -->
   <section class="section" id="research">
