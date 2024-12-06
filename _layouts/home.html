@@ -9,35 +9,46 @@ title: Home
   {% endif %}
 
     <!-- Profile Section -->
-  <section class="section" id="profile">
-    <div class="container is-max-desktop">
-      <h2>About Me</h2>
-      <div class="profile-block columns">
-        <!-- Profile Picture -->
-        <div class="column is-narrow">
-          <div class="profile-picture">
-            <img src="{{ './images/profile.jpeg' | relative_url }}" alt="Profile Picture" />
-          </div>
-        </div>
-        <!-- Bio Content -->
-        <div class="column">
-          <div class="content">
-            <p class="profile-description">{{ site.bio.content }}</p>
-          </div>
+  <!-- Profile Section -->
+<section class="section" id="profile">
+  <div class="container is-max-desktop">
+    <h2>About Me</h2>
+    <div class="profile-block columns">
+      <!-- Profile Picture -->
+      <div class="column is-narrow">
+        <div class="profile-picture">
+          <img src="{{ './images/profile.jpeg' | relative_url }}" alt="Profile Picture" />
         </div>
       </div>
-      <div class="icon-links">
-        <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub Profile" class="icon-link-box">
-          <i class="fab fa-github"></i>
-          <span>GitHub</span>
-        </a>
-        <a href="mailto:{{ site.email }}" aria-label="Email" class="icon-link-box">
-          <i class="fas fa-envelope"></i>
-          <span>Email</span>
-        </a>
+      <!-- Bio Content -->
+      <div class="column">
+        <div class="content">
+          <p class="profile-description">{{ site.bio.content }}</p>
+
+          <!-- Icon Links moved here to align left with bio content -->
+          <div class="icon-links">
+            <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub Profile" class="icon-link-box">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:{{ site.email }}" aria-label="Email" class="icon-link-box">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" aria-label="LinkedIn Profile" class="icon-link-box">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" aria-label="Google Scholar Profile" class="icon-link-box">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Google Scholar</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </section> 
+  </div>
+</section>
 
   <!-- Research Section -->
   <section class="section" id="research">
