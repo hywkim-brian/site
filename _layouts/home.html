@@ -8,23 +8,19 @@ title: Home
     <h1 class="page-heading">{{ page.title }}</h1>
   {% endif %}
 
-  <!-- Profile Section -->
   <section class="section" id="profile">
     <div class="container is-max-desktop">
       <h2>About Me</h2>
       <hr />
       <div class="profile-block columns">
-        <!-- Profile Picture -->
         <div class="column is-narrow">
           <div class="profile-picture">
             <img src="{{ './images/profile.jpeg' | relative_url }}" alt="Profile Picture" />
           </div>
         </div>
-        <!-- Bio Content and Icon Links -->
         <div class="column">
           <div class="content" style="text-align: left;">
             <p class="profile-description">{{ site.bio.content }}</p>
-            <!-- Place icon links here, in the same column as the bio -->
             <div class="icon-links">
               <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub Profile" class="icon-link-box">
                 <i class="fab fa-github"></i>
@@ -49,14 +45,12 @@ title: Home
     </div>
   </section>
 
-  <!-- Research Section -->
   <section class="section" id="research">
     <div class="container is-max-desktop">
       <h2>Research</h2>
       <hr />
       {% for publication in site.data.publications %}
         <div class="publication-block columns">
-          <!-- Publication Image -->
           <div class="column is-narrow">
             <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
               {% if publication.image_mouseover contains "mp4" %}
@@ -68,7 +62,6 @@ title: Home
               <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
             </div>
           </div>
-          <!-- Publication Content -->
           <div class="column">
             <div class="content">
               <h3 class="publication-title">
@@ -94,7 +87,6 @@ title: Home
               </div>
               <p class="publication-description">{{ publication.description }}</p>
 
-              <!-- Publication Links -->
               <div class="publication-links buttons field">
                 <a class="external-link button is-small is-light is-link is-rounded" href="{{ publication.project_page }}">
                   <span class="icon"><i class="fas fa-globe-americas"></i></span>
@@ -115,8 +107,7 @@ title: Home
                   </a>
                 {% endif %}
               </div>
-              <!-- /Publication Links -->
-            </div>
+              </div>
           </div>
         </div>
       {% endfor %}
@@ -124,7 +115,6 @@ title: Home
     </div>
   </section>
 
-  <!-- Services Section -->
   <section class="section" id="services">
     <div class="container is-max-desktop">
       <h2>Services</h2>
