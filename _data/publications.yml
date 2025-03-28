@@ -1,6 +1,6 @@
 - id: iseg
   title: "MeshUp: Multi-Target Mesh Deformation via Blended Score Distillation"
-  venue: 3DV, 2025 (Oral)
+  venue: 3DV, 2025 (Best Paper Honorable Mention)
   description: "TLDR; a framework that deforms a 3D mesh into multiple concepts, while controlling the strength and the region of their expression."
   project_page: "https://threedle.github.io/MeshUp/"
   github: threedle
