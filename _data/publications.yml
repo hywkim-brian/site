@@ -15,3 +15,17 @@
     - vova
     - rana
 
+- id: geostyle
+  title: "3D Stylization via Surface Normal Deformation"
+  venue: CVPR, 2025
+  description: "TLDR; A new differentiable dARAP method for identity-preserving mesh stylization."
+  project_page: "https://threedle.github.io/geometry-in-style/"
+  github: threedle
+  arxiv: 2503.23241
+  image: geomstyle.png
+  authors:
+    - namanh
+    - itai
+    - brian
+    - oded
+    - rana

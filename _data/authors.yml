@@ -20,10 +20,15 @@ noam:
   last_name: Aigerman
   website: https://noamaig.github.io/
 
-nam:
+namanh:
   first_name: Nam Anh
   last_name: Dinh
   website: https://people.cs.uchicago.edu/~namanh/
+
+oded:
+  first_name: Oded
+  last_name: Stein
+  website: https://odedstein.com/
 
 thibault:
   first_name: Thibault
