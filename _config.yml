@@ -14,7 +14,7 @@ bio:
   id: bio 
   title: "About me"
   content: |
-    <p>I am a first year CS PhD student at Columbia University, where I am fortunate to be advised by professor Silvia Sellán. My research interests lie in using geometry processing tools with 3D Vision models to enhance user-interactibility in computer graphics. I obtained my BS in Statistics at the University of Chicago, where I was spent two wonderful years working as a research assistant at 3DL, led by Prof. Rana Hanocka.</p>
+    <p>I am a first year CS PhD student at Columbia University, where I am fortunate to be advised by professor Silvia Sellán. My research interests lie in using geometry processing tools with 3D Vision models to enhance user-interactibility in computer graphics. I obtained my BS in Statistics at the University of Chicago, where I worked as a research assistant at 3DL, advised by Prof. Rana Hanocka.</p>
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
